@@ -8,12 +8,25 @@ alwaysApply: false
 
 When asked to “generate a roadmap / route map / flowchart as a `.drawio` file”, output **valid draw.io XML** using the canonical structure shown in typical Electron exports.
 
+## Open/security gotcha (drawio-desktop)
+
+- draw.io Desktop (Electron) may reject **menu-open** for files under the app base directory (`appBaseDir`) with **“Invalid file data”**.
+  - Workaround: save/export the generated `.drawio` to a path **outside** the running app directory (e.g. Desktop/Documents), then open via menu.
+  - Drag-and-drop may use a different path and can succeed even when menu-open fails.
+
 ## Minimal required structure (must keep)
 
 - Root wrapper: `<mxfile><diagram><mxGraphModel><root> ... </root></mxGraphModel></diagram></mxfile>`
 - Always include the two base cells:
   - `<mxCell id="0" />`
   - `<mxCell id="1" parent="0" />`
+
+## Parsing/format constraints (avoid “Invalid file data”)
+
+- File must start with **`<mx`** (e.g. `<mxfile ...>`) in the first bytes. Avoid leading whitespace/newlines before `<mxfile`.
+- Do **not** include XML comments (`<!-- ... -->`).
+- Escape XML special chars inside `value="..."`: use `&amp;`, `&lt;`, `&gt;`, `&quot;` as needed.
+- Prefer simple ASCII for arrows and symbols inside `value` when in doubt (`->`, `-/-`, `ug/mL`) to avoid encoding surprises.
 
 ## Nodes (steps)
 

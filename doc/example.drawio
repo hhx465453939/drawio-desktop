@@ -1,0 +1,223 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="第 1 页" id="uCigyJsbmAL-ykgMPbxS">
+    <mxGraphModel dx="2253" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-1" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="单细胞RNA测序数据采集" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-3" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-4" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="数据预处理与质控" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-6" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-7" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="细胞类型注释与聚类" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-9" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-10" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="深度学习模型构建" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-12" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-13" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="超参数优化与模型训练" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-15" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-16" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="DeepSHAP特征提取" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-18" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-19" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="差异表达分析整合" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-21" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-22" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="基因富集分析" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-24" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="PPx9kbx-MClLuNPvQ3Mn-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-25" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="生物学通路解释" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-27" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PPx9kbx-MClLuNPvQ3Mn-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="验证实验与结果整合" vertex="1">
+          <mxGeometry height="60" width="120" x="-640" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-29" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="cellranger上游质控" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-31" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="批次矫正" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="构建表达矩阵" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-34" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Seurat对象构建" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-36" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-38" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="细胞聚类与注释" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="显著差异基因计算与标记聚类" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-39" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" target="PPx9kbx-MClLuNPvQ3Mn-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="表达矩阵输出与矩阵注释" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-41" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" target="PPx9kbx-MClLuNPvQ3Mn-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="输入层、隐藏层、输出层设计" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="通用参数效果检测" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-44" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" target="PPx9kbx-MClLuNPvQ3Mn-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="建立超参搜索策略：学习率，层数，激活函数" vertex="1">
+          <mxGeometry height="50" width="120" x="-800" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-46" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" target="PPx9kbx-MClLuNPvQ3Mn-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="循环测试并调优并行训练框架" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="487.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="输出最佳模型参数与模型文件" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="542.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-49" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" target="PPx9kbx-MClLuNPvQ3Mn-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="评估模型表现并输出可视化结果" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="计算每一模型对应细胞的SHAP值-基因表" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-52" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="计算健康-造模-针灸状态下的差异基因" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-54" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="利用SHAP值对差异基因进行双重过滤" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="得到经过非线性过滤后的差异基因数据集" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-57" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="差异基因富集与数据集输出" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-59" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="功能注释与假说生成" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="下游单细胞功能分析" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-62" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="单细胞代谢推断" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-64" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" target="PPx9kbx-MClLuNPvQ3Mn-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="细胞通讯分析" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="885" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="转录因子推断" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-67" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" target="PPx9kbx-MClLuNPvQ3Mn-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="动物实验与形态学，分子生物学检测" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-69" edge="1" parent="1" source="PPx9kbx-MClLuNPvQ3Mn-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" target="PPx9kbx-MClLuNPvQ3Mn-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="体外共培养与分子生物学指标检测" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="PPx9kbx-MClLuNPvQ3Mn-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="整合分析" vertex="1">
+          <mxGeometry height="40" width="120" x="-480" y="1040" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
