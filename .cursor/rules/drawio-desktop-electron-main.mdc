@@ -1,0 +1,27 @@
+---
+description: drawio-desktop electron main process + ipc security conventions
+globs: src/main/**/*.js,build/**/*.{js,cjs,mjs},**/*.{js,cjs,mjs}
+alwaysApply: false
+---
+
+## JavaScript + module style
+
+- Use **ES modules** (`import`/`export`) where the file already uses them.
+- Keep **tab indentation** and **Allman braces** consistent with surrounding code.
+- Prefer **small, named helpers** over deeply nested inline functions.
+
+## Electron security + IPC rules
+
+- Treat **preload** as the only renderer bridge. Keep surface area minimal in
+  [`src/main/electron-preload.js`](mdc:src/main/electron-preload.js).
+- Never expose Node/Electron internals directly to renderer (no raw `ipcRenderer`,
+  no `fs`, no `child_process`).
+- Ensure IPC handlers validate **sender origin** (e.g. `validateSender()` pattern)
+  and never accept arbitrary file paths / URLs without strict allowlists.
+- Maintain **CSP / offline-first** posture: no remote code, no network exfiltration
+  of diagram data by default.
+
+## When editing main process
+
+- Central orchestration lives in [`src/main/electron.js`](mdc:src/main/electron.js).
+  Keep new behaviors behind feature flags/env vars when risk-sensitive.

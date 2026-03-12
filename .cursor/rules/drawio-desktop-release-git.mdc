@@ -1,0 +1,24 @@
+---
+description: drawio-desktop release/version sync and git conventions
+globs: sync.cjs,package.json,electron-builder-*.json,doc/**/*.md,build/**/*.{json,plist,html},**/*.{js,cjs,mjs}
+alwaysApply: false
+---
+
+## Versioning + build workflow
+
+- **Source of truth** for version is `drawio/VERSION` (submodule), not `package.json`.
+- Run **`npm run sync`** before packaging/releasing; it syncs the version and
+  generates any derived artifacts.
+- Be careful changing `electron-builder-*.json` and `build/` assets: they affect
+  signing/notarization and platform packaging behavior.
+
+## Git / commit message conventions
+
+- Branches: target **`dev`** for development; releases on `release` / `releases/v*.*.*`.
+- Commit messages: **sentence style, lower-case, no trailing period**.
+- If referencing issues, use `[jgraph/drawio-desktop#NNNN]` in the subject.
+
+## Release docs
+
+- Follow [`doc/RELEASE_PROCESS.md`](mdc:doc/RELEASE_PROCESS.md) when in doubt; prefer
+  documenting release-impacting changes alongside code changes.

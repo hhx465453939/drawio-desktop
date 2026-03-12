@@ -1,0 +1,63 @@
+---
+description: draw.io .drawio XML roadmap/flowchart output format (mxfile/mxCell)
+globs: **/*.drawio
+alwaysApply: false
+---
+
+## Goal
+
+When asked to “generate a roadmap / route map / flowchart as a `.drawio` file”, output **valid draw.io XML** using the canonical structure shown in typical Electron exports.
+
+## Minimal required structure (must keep)
+
+- Root wrapper: `<mxfile><diagram><mxGraphModel><root> ... </root></mxGraphModel></diagram></mxfile>`
+- Always include the two base cells:
+  - `<mxCell id="0" />`
+  - `<mxCell id="1" parent="0" />`
+
+## Nodes (steps)
+
+- Use `<mxCell vertex="1" parent="1" value="...">` for each step.
+- Include an `<mxGeometry ... as="geometry" />` with `x`, `y`, `width`, `height`.
+- Prefer short, action-oriented Chinese labels in `value` (e.g. “数据预处理与质控”).
+- Keep `style` stable; vary only colors/roundedness to convey categories.
+
+## Edges (connections)
+
+- Use `<mxCell edge="1" parent="1" source="NODE_ID" target="NODE_ID" style="...">`
+  with `<mxGeometry relative="1" as="geometry" />`.
+- Use orthogonal routing by default: `edgeStyle=orthogonalEdgeStyle;...`
+
+## Layout + readability conventions
+
+- Top-to-bottom mainline: keep consistent vertical spacing (e.g. \(y += 100\)).
+- Side branches: place to left/right and connect from mainline nodes.
+- Use color meaning consistently across the whole diagram (example mapping):
+  - Main stages: light red (`fillColor=#f8cecc;strokeColor=#b85450;`)
+  - Sub-steps/tools: light blue (`fillColor=#dae8fc;strokeColor=#6c8ebf;`)
+  - Modeling/compute: light yellow (`fillColor=#fff2cc;strokeColor=#d6b656;`)
+  - Validation/integration: light purple (`fillColor=#e1d5e7;strokeColor=#9673a6;`)
+
+## Template snippet (copy shape, replace IDs/labels/coords)
+
+```xml
+<mxfile host="Electron" version="29.x.x">
+  <diagram name="第 1 页" id="DIAGRAM_ID">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="STEP_A" parent="1" vertex="1"
+          style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;"
+          value="阶段 A">
+          <mxGeometry x="-640" y="20" width="120" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="EDGE_A_B" parent="1" edge="1" source="STEP_A" target="STEP_B"
+          style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+```
